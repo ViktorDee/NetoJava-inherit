@@ -14,8 +14,11 @@ public class Product {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public boolean matches(String search) {
+        if (name.matches(search)) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
 }

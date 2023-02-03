@@ -7,12 +7,13 @@ public class Book extends Product {
         this.author = author;
     }
 
-/*    @Override
-    public String getName() {
-        return name;
+    public boolean matches(String search) {
+        if (super.matches(search)) {
+            return true;
+        }
+        if (author.matches(search)) {
+            return true;
+        }
+        return false;
     }
-
-    public String getAuthor() {
-        return author;
-    } */
 }
