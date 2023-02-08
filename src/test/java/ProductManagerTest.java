@@ -62,7 +62,7 @@ public class ProductManagerTest {
     public void shouldNotFindProducts() {
 
         Product[] expected = {};
-        Product[] actual = manager.searchBy("");
+        Product[] actual = manager.searchBy("ручка");
 
         Assertions.assertArrayEquals(expected, actual);
 
